@@ -5,13 +5,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Kuldeep Bishnoi - Portfolio</title>
     <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Poppins:wght@300;400;700&display=swap" rel="stylesheet">
 </head>
 <body>
 
+    <!-- 🔹 Navigation Bar -->
     <header>
         <nav>
-            <h2>Kuldeep Bishnoi</h2>
-            <ul>
+            <h2 class="logo">Kuldeep <span>Bishnoi</span></h2>
+            <ul class="nav-links">
                 <li><a href="#about">About</a></li>
                 <li><a href="#projects">Projects</a></li>
                 <li><a href="#contact">Contact</a></li>
@@ -19,31 +21,45 @@
         </nav>
     </header>
 
+    <!-- 🔹 Hero Section -->
     <section id="hero">
         <div class="hero-content">
-            <h1>Hello, I'm Kuldeep Bishnoi</h1>
+            <h1>Hello, I'm <span>Kuldeep Bishnoi</span></h1>
             <p>A Passionate Web Developer</p>
             <a href="#contact" class="btn">Hire Me</a>
         </div>
     </section>
 
+    <!-- 🔹 About Section -->
     <section id="about">
         <h2>About Me</h2>
-        <p>I am a web developer with expertise in creating modern, responsive, and interactive websites.</p>
+        <img src="images/round_profile.png" alt="Kuldeep Bishnoi" class="profile-img">
+        <p><strong>I am a <span class="highlight">Web Developer</span> with expertise in creating modern, <span class="highlight">responsive</span>, and interactive websites.</strong></p>
     </section>
 
+    <!-- 🔹 Projects Section -->
     <section id="projects">
         <h2>My Projects</h2>
-        <div class="project-card">Portfolio Website</div>
-        <div class="project-card">Community Website</div>
+        <div class="project-container">
+            <div class="project-card">
+                <h3>Portfolio Website</h3>
+                <p>A sleek and professional personal portfolio.</p>
+            </div>
+            <div class="project-card">
+                <h3>Community Website</h3>
+                <p>A platform for connecting like-minded individuals.</p>
+            </div>
+        </div>
     </section>
 
+    <!-- 🔹 Contact Section -->
     <section id="contact">
         <h2>Contact Me</h2>
-        <p>Email: kuldeep@example.com</p>
-        <p>LinkedIn: linkedin.com/in/kuldeepbishnoi</p>
+        <p>Email: <a href="mailto:kuldeep@example.com">kuldeep@example.com</a></p>
+        <p>LinkedIn: <a href="https://linkedin.com/in/kuldeepbishnoi" target="_blank">linkedin.com/in/kuldeepbishnoi</a></p>
     </section>
 
+    <!-- 🔹 Footer -->
     <footer>
         <p>&copy; 2025 Kuldeep Bishnoi. All rights reserved.</p>
     </footer>
