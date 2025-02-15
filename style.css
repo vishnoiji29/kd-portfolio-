@@ -1,46 +1,149 @@
+/* 🔹 Import Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&family=Poppins:wght@300;400;700&display=swap');
+
+/* 🔹 Global Styling */
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Poppins', sans-serif;
     margin: 0;
     padding: 0;
     text-align: center;
+    background-color: #f4f4f4;
 }
 
+/* 🔹 Stylish Header */
 header {
-    background: #333;
+    background: #222;
+    padding: 15px;
     color: white;
-    padding: 1rem;
 }
 
-nav ul {
+.logo {
+    font-family: 'Great Vibes', cursive;
+    font-size: 32px;
+    color: #ffeb3b;
+}
+
+.logo span {
+    color: #ff4b2b;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+}
+
+.nav-links {
     list-style: none;
     padding: 0;
 }
 
-nav ul li {
+.nav-links li {
     display: inline;
     margin: 0 15px;
 }
 
-nav ul li a {
-    color: white;
+.nav-links li a {
     text-decoration: none;
+    color: white;
+    font-weight: bold;
 }
 
+/* 🔹 Hero Section */
 #hero {
-    background: url('images/profile.jpg') no-repeat center center/cover;
-    height: 50vh;
+    height: 100vh;
     display: flex;
     align-items: center;
     justify-content: center;
-    color: white;
-    text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+    text-align: center;
+    background: url('images/background.jpg') no-repeat center center/cover;
+    position: relative;
+}
+
+.hero-content {
+    position: relative;
+    color: #fff;
+    z-index: 1;
+}
+
+.hero-content h1 {
+    font-size: 50px;
+    font-weight: 600;
+}
+
+.hero-content span {
+    color: #ffeb3b;
+}
+
+.hero-content p {
+    font-size: 20px;
+    margin: 10px 0;
 }
 
 .btn {
     display: inline-block;
-    padding: 10px 20px;
-    background: blue;
-    color: white;
-    text-decoration: none;
+    margin-top: 15px;
+    padding: 12px 25px;
+    background: #ff4b2b;
+    color: #fff;
     border-radius: 5px;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    background: #ffeb3b;
+    color: #000;
+}
+
+/* 🔹 Profile Image Styling */
+.profile-img {
+    display: block;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin: 15px auto;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* 🔹 About Section */
+#about p {
+    font-size: 18px;
+    font-weight: bold;
+    color: #333;
+}
+
+.highlight {
+    color: #ff4b2b;
+}
+
+/* 🔹 Projects Section */
+.project-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.project-card {
+    width: 250px;
+    padding: 20px;
+    background: #ffeb3b;
+    border-radius: 8px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    transition: 0.3s;
+}
+
+.project-card:hover {
+    transform: scale(1.05);
+}
+
+/* 🔹 Footer */
+footer {
+    background: #222;
+    color: white;
+    padding: 10px;
+    text-align: center;
+    margin-top: 20px;
 }
